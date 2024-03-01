@@ -1,9 +1,7 @@
 import java.util.Scanner;
 public class Tugas118 {
     public static void main(String[] args) {
-        //array KODE
         char[] KODE = {'A', 'B', 'D', 'E', 'F', 'G', 'H', 'L', 'N', 'T'};
-        //array KOTA
         String[][] KOTA = {
             {"BANTEN"},
             {"JAKARTA"},

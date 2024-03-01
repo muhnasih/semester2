@@ -1,5 +1,3 @@
-
-
 import java.util.Scanner;
 public class Array18 {
     static Scanner scanner = new Scanner(System.in);

@@ -19,6 +19,9 @@ public class BukuMain18 {
    bk2.terjual((11));
    bk2.tampilInformasi();
    
+   Buku18 bk3 = new Buku18("Muhammad Nasih", "Nasih", 233, 159,60000);
+   bk3.terjual(15);
+   bk3.tampilInformasi();
 
 }
 }

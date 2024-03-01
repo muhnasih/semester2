@@ -1,5 +1,3 @@
-
-
 public class Fungsi18 {
      static int[][]stockBunga = {
         {10, 5, 15, 7},
@@ -8,10 +6,7 @@ public class Fungsi18 {
         {5, 7, 12, 9}
      };
 
-     // Harga per unit bunga
      static int[] hargaBunga = {75000, 50000, 60000,10000};
-
-     // Jumlah bunga yang mati
      static int[] bungaMati = {-1, -2, 0, -5};
      public static void main(String[] args) {
         for (int i = 0; i < stockBunga.length; i++) {

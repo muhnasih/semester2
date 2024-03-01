@@ -1,0 +1,56 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Array18",
+            "request": "launch",
+            "mainClass": "Array18",
+            "projectName": "Jobsheet1_7f8cefd5"
+        },
+        {
+            "type": "java",
+            "name": "Fungsi18",
+            "request": "launch",
+            "mainClass": "Fungsi18",
+            "projectName": "Jobsheet1_7f8cefd5"
+        },
+        {
+            "type": "java",
+            "name": "Pemilihan18",
+            "request": "launch",
+            "mainClass": "Pemilihan18",
+            "projectName": "Jobsheet1_7f8cefd5"
+        },
+        {
+            "type": "java",
+            "name": "Perulangan18",
+            "request": "launch",
+            "mainClass": "Perulangan18",
+            "projectName": "Jobsheet1_7f8cefd5"
+        },
+        {
+            "type": "java",
+            "name": "Tugas118",
+            "request": "launch",
+            "mainClass": "Tugas118",
+            "projectName": "Jobsheet1_7f8cefd5"
+        },
+        {
+            "type": "java",
+            "name": "Tugas218",
+            "request": "launch",
+            "mainClass": "Tugas218",
+            "projectName": "Jobsheet1_7f8cefd5"
+        }
+    ]
+}
