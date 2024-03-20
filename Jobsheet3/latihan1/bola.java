@@ -1,4 +1,3 @@
-package latihan1;
 
 public class bola {
         double jariJari;

@@ -52,5 +52,5 @@ public class Dragon18 {
         System.out.println("X = " + x + "\t Y = " + y);
     }
 
-}
+
 }

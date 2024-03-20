@@ -1,4 +1,3 @@
-package latihan1;
 
 public class Limas {
     double sisiAlas;
