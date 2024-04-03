@@ -1,29 +1,52 @@
 import java.util.Scanner;
 
 public class MainPangkat {
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("==============================");
-        System.out.println("Masukkan jumlah elemen yang dihitung: ");
-        int elemen = sc.nextInt();
 
-        Pangkat[] png = new Pangkat[elemen];
-        for (int i = 0; i < elemen; i++) {
-            png[i] = new Pangkat();
-            System.out.println("Masukkan nilai yang hendak di pangkatkan: ");
-            int nilai = sc.nextInt();
-            png[i].nilai = nilai;
-            System.out.println("Masukkan nilai pemangkat:");
-            int pangkat = sc.nextInt();
-            png[i].pangkat = pangkat;
+        System.out.println("Pilih metode perhitungan pangkat:");
+        System.out.println("1. Brute Force");
+        System.out.println("2. Divide and Conquer");
+        System.out.print("Masukkan pilihan (1/2): ");
+        int pilihan = sc.nextInt();
+
+        if (pilihan == 1) {
+            System.out.print("Masukkan jumlah elemen yang dihitung: ");
+            int element = sc.nextInt();
+            pangkat18[] png = new pangkat18[element];
+            for (int i = 0; i < element; i++) {
+                System.out.print("Masukkan nilai yang hendak dipangktkan: ");
+                int nilai = sc.nextInt();
+                System.out.print("Masukkan nilai pemangkat: ");
+                int pangkat = sc.nextInt();
+                png[i] = new pangkat18(nilai, pangkat);
+            }
+            System.out.println("Hasil PANGKAT - BRUTE FORCE");
+            for (int i = 0; i < element; i++) {
+                System.out.println("Hasil dari " + png[i].nilai + " pangkat " + png[i].pangkat + " adalah "
+                        + png[i].pangkatBF(png[i].nilai, png[i].pangkat));
+            }
+        } else if (pilihan == 2) {
+            System.out.print("Masukkan jumlah elemen yang dihitung: ");
+            int element = sc.nextInt();
+            pangkat18[] png = new pangkat18[element];
+            for (int i = 0; i < element; i++) {
+                System.out.print("Masukkan nilai yang hendak dipangktkan: ");
+                int nilai = sc.nextInt();
+                System.out.print("Masukkan nilai pemangkat: ");
+                int pangkat = sc.nextInt();
+                png[i] = new pangkat18(nilai, pangkat);
+            }
+            System.out.println("Hasil PANGKAT - DIVIDE AND CONQUER");
+            for (int i = 0; i < element; i++) {
+                System.out.println("Hasil dari " + png[i].nilai + " pangkat " + png[i].pangkat + " adalah "
+                        + png[i].pangkatDC(png[i].nilai, png[i].pangkat));
+            }
+        } else {
+            System.out.println("Pilihan tidak valid!");
         }
-        System.out.println("HASIL PANGKAT - BRUTE FORCE");
-        for (int i = 0; i < elemen; i++) {
-            System.out.println("Hasil dari " + png[i].nilai + png[i].pangkat + " adalah " + png[i].pangkatBF(png[i].nilai, png[i].pangkat));
-        }
-        System.out.println("HASIL PANGKAT - DIVIDE AND CONQUER");
-        for (int i = 0; i < elemen; i++) {
-            System.out.println("Hasil dari " + png[i].nilai  + png[i].pangkat + " adalah " + png[i].pangkatDC(png[i].nilai, png[i].pangkat));
-        }
+
+        sc.close();
     }
 }
