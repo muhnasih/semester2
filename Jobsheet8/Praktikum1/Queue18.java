@@ -56,7 +56,7 @@ public class Queue18 {
     }
 
     public void Enqueue(int dt){
-        if (IsFull()){
+        if (sFull()){
             System.out.println("Queue sudah penuh");
         }else{
             if (isEmpty()) {
