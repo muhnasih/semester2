@@ -1,13 +1,11 @@
+
 public class Node18 {
-    int data;
+
+    Mahasiswa18 data;
     Node18 next;
 
-    Node18(){
+    Node18(Mahasiswa18 data, Node18 next) {
+        this.data = data;
+        this.next = next;
     }
-    
-    Node18(int nilai, Node18 berikutnya){
-        data = nilai;
-        next = berikutnya;
-    }
-    
 }
